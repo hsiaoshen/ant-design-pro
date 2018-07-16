@@ -82,3 +82,26 @@ export default connect(({ user }) => {
 
 ```
 
+## 弄懂以下问题
+
+### react的生命周期
+
+1. Mounting: 插入真实的DOM
+
+    1. commponentWillMount: 渲染前调用，在客户端和服务端
+    2. commponentDidMount: 渲染之后调用，在客户端
+    
+2. Updating：重新渲染
+
+    1. componentWillReceiveProps: 接受新的state或者prop时调用，初始化渲染不调用
+    2. shouldComponentUpdate: 返回一个布尔值, 在组件接收到新的props或者state时被调用。在初始化时或者使用forceUpdate时不被调用。 
+    3. componentWillUpdate： 在组件接收到新的props或者state但还没有render时被调用。在初始化时不会被调用
+    4. componentDidUpdate: 在组件完成更新后立即调用。在初始化时不会被调用。
+    
+3. Unmounting: 移除真实的DOM
+
+    1. componentWillUnmount: 在组件从 DOM 中移除的时候立刻被调用。
+    
+    
+
+
