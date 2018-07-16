@@ -51,5 +51,15 @@ $ dva init
 
 **注意**： 在model里面触发action时不需要携带namespace, 组件中触发需要在action前添加namespace
 
+### app
+
+```js
+import dva from 'dva';
+var app = dva({
+    initialState: {}
+})
+
+// 初始化的state优先高于model中的state
+```
 
 
