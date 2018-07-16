@@ -62,4 +62,23 @@ var app = dva({
 // 初始化的state优先高于model中的state
 ```
 
+### connect
+
+组件和model的连接采用connect
+
+```js
+import React from 'react';
+import { connect } from 'dva';
+
+const User = ({ dispatch, user }) => {
+  return (
+    <div></div>
+  )
+}
+
+export default connect(({ user }) => {
+  return user;
+})(User);
+
+```
 
