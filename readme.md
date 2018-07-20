@@ -113,6 +113,27 @@ $ mkdir my-project && cd my-project
 $ pro new # 安装脚手架 
 ```
 
+### 实现过程
+
+在浏览器上输入路径 --> 脚本架获取路径（dva） --> common种匹配路径 --> 加载layouts页面 --> router页面 --> 调用dispatch()请求数据，加载 --> 加载model模型，并调用services请求 --> 参数传到components控制 --> 加载components --> 渲染返回html
+
+### 开发需要做
+
+1. common种添加新页面的path
+2. routers中增加新路由页面
+3. 需要复用的components封装
+4. models新增模型
+5. services增加请求
+
+
+### 备注
+
+1. antd是样式，antd pro是框架
+2. antd pro 有自己的权限控制体系 Authorized
+3. dva请求一步，有自己的方法获取到结果或者错误
+4. style中的样式用驼峰法 
+
+
 
 
 
