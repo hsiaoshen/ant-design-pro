@@ -101,7 +101,18 @@ export default connect(({ user }) => {
 3. Unmounting: 移除真实的DOM
 
     1. componentWillUnmount: 在组件从 DOM 中移除的时候立刻被调用。
-    
-    
+
+
+## antd pro start
+
+### 集成化安装
+
+```sh
+$ npm install ant-design-pro-cli -g 
+$ mkdir my-project && cd my-project 
+$ pro new # 安装脚手架 
+```
+
+
 
 
